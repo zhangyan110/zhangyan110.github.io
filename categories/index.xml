@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Jane - A super concise theme for Hugo</title>
-    <link>http://zhangyan110.github.io/categories/</link>
+    <link>https://zhangyan110.github.io/categories/</link>
     <description>Recent content in Categories on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
     
-	<atom:link href="http://zhangyan110.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhangyan110.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>docs</title>
-      <link>http://zhangyan110.github.io/categories/docs/</link>
+      <link>https://zhangyan110.github.io/categories/docs/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/docs/</guid>
+      <guid>https://zhangyan110.github.io/categories/docs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>http://zhangyan110.github.io/categories/index/</link>
+      <link>https://zhangyan110.github.io/categories/index/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/index/</guid>
+      <guid>https://zhangyan110.github.io/categories/index/</guid>
       <description></description>
     </item>
     
     <item>
       <title>math</title>
-      <link>http://zhangyan110.github.io/categories/math/</link>
+      <link>https://zhangyan110.github.io/categories/math/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/math/</guid>
+      <guid>https://zhangyan110.github.io/categories/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>http://zhangyan110.github.io/categories/shortcodes/</link>
+      <link>https://zhangyan110.github.io/categories/shortcodes/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/shortcodes/</guid>
+      <guid>https://zhangyan110.github.io/categories/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>English</title>
-      <link>http://zhangyan110.github.io/categories/english/</link>
+      <link>https://zhangyan110.github.io/categories/english/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/english/</guid>
+      <guid>https://zhangyan110.github.io/categories/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test</title>
-      <link>http://zhangyan110.github.io/categories/test/</link>
+      <link>https://zhangyan110.github.io/categories/test/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/test/</guid>
+      <guid>https://zhangyan110.github.io/categories/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>http://zhangyan110.github.io/categories/development/</link>
+      <link>https://zhangyan110.github.io/categories/development/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/development/</guid>
+      <guid>https://zhangyan110.github.io/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>http://zhangyan110.github.io/categories/golang/</link>
+      <link>https://zhangyan110.github.io/categories/golang/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/golang/</guid>
+      <guid>https://zhangyan110.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Syntax Highlighting</title>
-      <link>http://zhangyan110.github.io/categories/syntax-highlighting/</link>
+      <link>https://zhangyan110.github.io/categories/syntax-highlighting/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>http://zhangyan110.github.io/categories/syntax-highlighting/</guid>
+      <guid>https://zhangyan110.github.io/categories/syntax-highlighting/</guid>
       <description></description>
     </item>
     
