@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jane - A super concise theme for Hugo</title>
+    <title>张大仙儿</title>
     <link>https://zhangyan110.github.io/</link>
-    <description>Recent content on Jane - A super concise theme for Hugo</description>
+    <description>Recent content on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://zhangyan110.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -37,7 +37,7 @@
     <item>
       <title>Posts</title>
       <link>https://zhangyan110.github.io/post/</link>
-      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyan110.github.io/post/</guid>
       

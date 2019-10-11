@@ -1,67 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Jane - A super concise theme for Hugo</title>
+    <title>Categories on 张大仙儿</title>
     <link>https://zhangyan110.github.io/categories/</link>
-    <description>Recent content in Categories on Jane - A super concise theme for Hugo</description>
+    <description>Recent content in Categories on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyan110.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>docs</title>
-      <link>https://zhangyan110.github.io/categories/docs/</link>
-      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      <title>python学习笔记</title>
+      <link>https://zhangyan110.github.io/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/categories/docs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>https://zhangyan110.github.io/categories/index/</link>
-      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
-      
-      <guid>https://zhangyan110.github.io/categories/index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://zhangyan110.github.io/categories/math/</link>
-      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
-      
-      <guid>https://zhangyan110.github.io/categories/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://zhangyan110.github.io/categories/shortcodes/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://zhangyan110.github.io/categories/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English</title>
-      <link>https://zhangyan110.github.io/categories/english/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://zhangyan110.github.io/categories/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://zhangyan110.github.io/categories/test/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://zhangyan110.github.io/categories/test/</guid>
+      <guid>https://zhangyan110.github.io/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     
@@ -84,11 +39,11 @@
     </item>
     
     <item>
-      <title>Syntax Highlighting</title>
-      <link>https://zhangyan110.github.io/categories/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      <title>index</title>
+      <link>https://zhangyan110.github.io/categories/index/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/categories/syntax-highlighting/</guid>
+      <guid>https://zhangyan110.github.io/categories/index/</guid>
       <description></description>
     </item>
     
