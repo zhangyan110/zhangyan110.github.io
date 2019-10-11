@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>认识python on 张大仙儿</title>
+    <link>https://zhangyan110.github.io/tags/%E8%AE%A4%E8%AF%86python/</link>
+    <description>Recent content in 认识python on 张大仙儿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangyan110.github.io/tags/%E8%AE%A4%E8%AF%86python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python 和 Ipython</title>
+      <link>https://zhangyan110.github.io/post/python-%E5%92%8C-ipython/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/python-%E5%92%8C-ipython/</guid>
+      <description>Python解释器 python是一种解释性的语言，区分于C和JAVA等编译性的语言，python解释器通过一次执行一条语句来运行程序。标准的</description>
+    </item>
+    
+  </channel>
+</rss>

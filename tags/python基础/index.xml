@@ -6,27 +6,27 @@
     <description>Recent content in python基础 on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyan110.github.io/tags/python%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>python 和 Ipython</title>
-      <link>https://zhangyan110.github.io/post/python-%E5%92%8C-ipython/</link>
-      <pubDate>Sun, 30 Sep 2018 00:00:00 +0000</pubDate>
+      <title>数据结构</title>
+      <link>https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/python-%E5%92%8C-ipython/</guid>
-      <description>Python解释器 python是一种解释性的语言，区分于C和JAVA等编译性的语言，python解释器通过一次执行一条语句来运行程序。标准的</description>
+      <guid>https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>列表（list）：[ ] 列表中的各个元素可以是各种不同数据类型，也可以是列表本身，或者是字典、集合、元组等。 1 In [1]:a = [12,&amp;#39;stri</description>
     </item>
     
     <item>
-      <title>python环境搭建</title>
-      <link>https://zhangyan110.github.io/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
-      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      <title>数据类型和运算符</title>
+      <link>https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-      <description>安装与设置 笔者使用的是免费的Anoconda 开发版本，标椎开发环境是Ipython（命令行）和 Juypyter notebook（文本编辑器），区别于功能更</description>
+      <guid>https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>一、数据类型 1.字符串（str) 字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号； 1 2 3 In [1]:ass = &amp;#39;this is a short string.&amp;#39; In</description>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyan110.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>python基础</title>
       <link>https://zhangyan110.github.io/tags/python%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Sun, 30 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyan110.github.io/tags/python%E5%9F%BA%E7%A1%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>认识python</title>
+      <link>https://zhangyan110.github.io/tags/%E8%AE%A4%E8%AF%86python/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/tags/%E8%AE%A4%E8%AF%86python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>安装</title>
+      <link>https://zhangyan110.github.io/tags/%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/tags/%E5%AE%89%E8%A3%85/</guid>
       <description></description>
     </item>
     

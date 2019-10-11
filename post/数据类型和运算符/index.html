@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Archive - 张大仙儿</title>
+  <title>数据类型和运算符 - 张大仙儿</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="张大仙儿" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="一、数据类型 1.字符串（str) 字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号； 1 2 3 In [1]:ass = &amp;#39;this is a short string.&amp;#39; In" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="https://zhangyan110.github.io/post/" />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="张大仙儿" />
+<link rel="canonical" href="https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/" />
+
 
 
 
@@ -58,18 +59,26 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://zhangyan110.github.io/post/" />
+<meta property="og:title" content="数据类型和运算符" />
+<meta property="og:description" content="一、数据类型 1.字符串（str) 字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号； 1 2 3 In [1]:ass = &#39;this is a short string.&#39; In" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/" />
+<meta property="article:published_time" content="2019-07-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-03T00:00:00+00:00" />
+<meta itemprop="name" content="数据类型和运算符">
+<meta itemprop="description" content="一、数据类型 1.字符串（str) 字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号； 1 2 3 In [1]:ass = &#39;this is a short string.&#39; In">
 
-<meta property="og:updated_time" content="2019-08-03T00:00:00+00:00" />
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-07-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="597">
+
+
+
+<meta itemprop="keywords" content="python基础," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="数据类型和运算符"/>
+<meta name="twitter:description" content="一、数据类型 1.字符串（str) 字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号； 1 2 3 In [1]:ass = &#39;this is a short string.&#39; In"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -258,7 +267,7 @@ if (!doNotTrack) {
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -339,92 +348,326 @@ if (!doNotTrack) {
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">数据类型和运算符</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-07-03" class="post-time">
+          2019-07-03
+        </time>
+        <div class="post-category">
+            <a href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"> Python数据分析 </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#一-数据类型">一、数据类型</a>
+<ul>
+<li><a href="#1-字符串-str">1.字符串（str)</a>
+<ul>
+<li><a href="#len-和-string模块">+ 、* 、len、和 string模块</a></li>
+<li><a href="#字符串索引">字符串索引</a></li>
+</ul></li>
+<li><a href="#数值-int">数值（int）</a></li>
+<li><a href="#布尔值-bool">布尔值 （bool）</a></li>
+<li><a href="#空值-nan">空值（NaN）</a></li>
+</ul></li>
+<li><a href="#二-运算符">二、运算符</a></li>
+<li><a href="#三-类型转换">三、类型转换</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h1 id="一-数据类型">一、数据类型</h1>
+
+<h2 id="1-字符串-str">1.字符串（str)</h2>
+
+<p>字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号；</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="n">ass</span> <span class="o">=</span> <span class="s1">&#39;this is a short string.&#39;</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span><span class="n">bss</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;this is a long string and you can write is in 
+</span><span class="s1">                two place with three yinhao&#39;&#39;&#39;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="len-和-string模块">+ 、* 、len、和 string模块</h3>
+
+<ol>
+<li>string模块：</li>
+</ol>
+
+<p>ass.split() ：拆分成列表</p>
+
+<p>ass.join() ：组合成字符串</p>
+
+<p>ass.strip() ：去除字符串两端多余的空格、制表符、换行符</p>
+
+<p>ass.replace() ：替换</p>
+
+<p>lower()、upper() 、capitalize()  ：小写、大写、只首字母大写</p>
+
+<ol>
+<li><p>+号可以将几个字符串连接为一个</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;this is &#39;</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span><span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;a string.&#39;</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span><span class="s1">&#39;this is a string&#39;</span></code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>*号可以将一个字符串进行重复</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span><span class="s1">&#39;string &#39;</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span><span class="s1">&#39;string string string &#39;</span></code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>len 可以查看一个字符串的长度，即包含的字符的数量</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;I Love You!&#39;</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span><span class="mi">11</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+<h3 id="字符串索引">字符串索引</h3>
+
+<p>字符串的索引是从0开始，0代表第一个字符，用[0] 来进行索引。</p>
+
+<h2 id="数值-int">数值（int）</h2>
+
+<p>数值中又包含整数和浮点数：</p>
+
+<ul>
+<li>整数 （d）：</li>
+<li>浮点数 （float）:</li>
+</ul>
+
+<h2 id="布尔值-bool">布尔值 （bool）</h2>
+
+<p>布尔值用True 和 False 表示</p>
+
+<h2 id="空值-nan">空值（NaN）</h2>
+
+<ul>
+<li>a = &lsquo;  &rsquo; ：字符串的空值</li>
+<li>a = None ：数值的空值</li>
+</ul>
+
+<h1 id="二-运算符">二、运算符</h1>
+
+<ul>
+<li>对于数值来讲，一般运算符有：</li>
+</ul>
+
+<p>+、-、*、/、**（幂）、%（余数）、//（取整）</p>
+
+<ul>
+<li>比较运算符有：</li>
+</ul>
+
+<p>== 等于、！= 不等于、&lt; 、&gt; 、&gt;=、&lt;=</p>
+
+<ul>
+<li><p>赋值运算符：</p>
+
+<ol>
+<li>= ：右边赋给左边的变量       a = 6</li>
+<li>+=：右边加左边的结果赋给左边      a += c    就是a = a+c</li>
+<li>-=：类比上</li>
+<li>*=：</li>
+<li>/=：</li>
+<li>%=：</li>
+<li>**=：</li>
+<li>//=：</li>
+</ol></li>
+
+<li><p>逻辑运算：</p>
+
+<ol>
+<li>and    : &amp;      并</li>
+<li>or   :   |     交</li>
+<li>not  :   取反</li>
+</ol></li>
+</ul>
+
+<h1 id="三-类型转换">三、类型转换</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span><span class="nb">int</span><span class="p">(</span><span class="mf">8.3</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span><span class="mi">8</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span><span class="nb">float</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span><span class="mf">3.0</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span><span class="nb">str</span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">张大仙儿</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      2019-07-03
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://zhangyan110.github.io/tags/python%E5%9F%BA%E7%A1%80/">python基础</a>
           
-<section id="archive" class="archive">
-    <div class="archive-title">
-      <span class="archive-post-counter">
-          4 posts In Total
-      </span>
-    </div>
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/python-%E5%92%8C-ipython/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">python 和 Ipython</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+            <span class="next-text nav-default">python环境搭建</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    Show Disqus Comments
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'true';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+  </div>
+
     
-      <div class="collection-title">
-        <h2 class="archive-year">2019</h2>
-      </div>
-
-    <div class="archive-post">
-      <time datetime="2019-08-03" class="archive-post-time">
-        2019-08-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-post-link">
-          数据结构
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-07-03" class="archive-post-time">
-        2019-07-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/" class="archive-post-link">
-          数据类型和运算符
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-07-03" class="archive-post-time">
-        2019-07-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/python-%E5%92%8C-ipython/" class="archive-post-link">
-          python 和 Ipython
-        </a>
-      </span>
-    </div>
-    
-      <div class="collection-title">
-        <h2 class="archive-year">2018</h2>
-      </div>
-
-    <div class="archive-post">
-      <time datetime="2018-09-28" class="archive-post-time">
-        2018-09-28
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="archive-post-link">
-          python环境搭建
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
 
   
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
         </div>
       </div>

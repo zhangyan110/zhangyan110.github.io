@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安装 on 张大仙儿</title>
+    <link>https://zhangyan110.github.io/tags/%E5%AE%89%E8%A3%85/</link>
+    <description>Recent content in 安装 on 张大仙儿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangyan110.github.io/tags/%E5%AE%89%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python环境搭建</title>
+      <link>https://zhangyan110.github.io/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>安装与设置 笔者使用的是免费的Anoconda 开发版本，标椎开发环境是Ipython（命令行）和 Juypyter notebook（文本编辑器），区别于功能更</description>
+    </item>
+    
+  </channel>
+</rss>
