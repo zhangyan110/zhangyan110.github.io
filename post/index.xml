@@ -6,18 +6,27 @@
     <description>Recent content in Posts on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyan110.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>python第一课</title>
-      <link>https://zhangyan110.github.io/post/python%E5%AD%A6%E4%B9%A0/</link>
+      <title>python 和 Ipython</title>
+      <link>https://zhangyan110.github.io/post/python-%E5%92%8C-ipython/</link>
+      <pubDate>Sun, 30 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/python-%E5%92%8C-ipython/</guid>
+      <description>Python解释器 python是一种解释性的语言，区分于C和JAVA等编译性的语言，python解释器通过一次执行一条语句来运行程序。标准的</description>
+    </item>
+    
+    <item>
+      <title>python环境搭建</title>
+      <link>https://zhangyan110.github.io/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/python%E5%AD%A6%E4%B9%A0/</guid>
-      <description>python简介 python起源 python安装 [ ] 1.架飞机是 [ ] 放假积极 [ ] [^课件附件是狂风大作]: 搭建搭建撒第三季 [ ] 分手见覅额及 代</description>
+      <guid>https://zhangyan110.github.io/post/python%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <description>安装与设置 笔者使用的是免费的Anoconda 开发版本，标椎开发环境是Ipython（命令行）和 Juypyter notebook（文本编辑器），区别于功能更</description>
     </item>
     
   </channel>
