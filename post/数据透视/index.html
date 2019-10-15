@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>pandas缺失值和异常值 - 张大仙儿</title>
+  <title>数据透视 - 张大仙儿</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="张大仙儿" />
-  <meta name="description" content="缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.[&#39;列名&#39;].isnull()：判断某列是否有缺失" />
+  <meta name="description" content="使用Pamdas中的pivot_table()函数的前提也是挑战，就是需要理解数据，包括数据的实际意义，以及数据之间的关系，在这基础之上，还" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="https://zhangyan110.github.io/post/pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/" />
+<link rel="canonical" href="https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86/" />
 
 
 
@@ -59,26 +59,26 @@
 
 
 
-<meta property="og:title" content="pandas缺失值和异常值" />
-<meta property="og:description" content="缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.[&#39;列名&#39;].isnull()：判断某列是否有缺失" />
+<meta property="og:title" content="数据透视" />
+<meta property="og:description" content="使用Pamdas中的pivot_table()函数的前提也是挑战，就是需要理解数据，包括数据的实际意义，以及数据之间的关系，在这基础之上，还" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zhangyan110.github.io/post/pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/" />
-<meta property="article:published_time" content="2019-08-19T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-08-19T00:00:00+00:00" />
-<meta itemprop="name" content="pandas缺失值和异常值">
-<meta itemprop="description" content="缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.[&#39;列名&#39;].isnull()：判断某列是否有缺失">
+<meta property="og:url" content="https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86/" />
+<meta property="article:published_time" content="2019-08-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-22T00:00:00+00:00" />
+<meta itemprop="name" content="数据透视">
+<meta itemprop="description" content="使用Pamdas中的pivot_table()函数的前提也是挑战，就是需要理解数据，包括数据的实际意义，以及数据之间的关系，在这基础之上，还">
 
 
-<meta itemprop="datePublished" content="2019-08-19T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-08-19T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="863">
+<meta itemprop="datePublished" content="2019-08-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1074">
 
 
 
-<meta itemprop="keywords" content="Pandas -1," />
+<meta itemprop="keywords" content="Pandas -2," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="pandas缺失值和异常值"/>
-<meta name="twitter:description" content="缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.[&#39;列名&#39;].isnull()：判断某列是否有缺失"/>
+<meta name="twitter:title" content="数据透视"/>
+<meta name="twitter:description" content="使用Pamdas中的pivot_table()函数的前提也是挑战，就是需要理解数据，包括数据的实际意义，以及数据之间的关系，在这基础之上，还"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -351,11 +351,11 @@ if (!doNotTrack) {
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">pandas缺失值和异常值</h1>
+      <h1 class="post-title">数据透视</h1>
       
       <div class="post-meta">
-        <time datetime="2019-08-19" class="post-time">
-          2019-08-19
+        <time datetime="2019-08-22" class="post-time">
+          2019-08-22
         </time>
         <div class="post-category">
             <a href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bpandas/"> Python数据分析之Pandas </a>
@@ -378,12 +378,14 @@ if (!doNotTrack) {
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#缺失值">缺失值：</a>
+<li>
 <ul>
-<li><a href="#判断是否存在缺失值-df-isnull-返回bool值-缺失值都为true">判断是否存在缺失值：<code>df.isnull()</code>    返回bool值，缺失值都为True</a></li>
-<li><a href="#处理缺失值-填充-和-删除">处理缺失值：填充 和 删除</a></li>
+<li><a href="#基本形式">基本形式</a>
+<ul>
+<li><a href="#其余参数使用">其余参数使用：</a></li>
+<li><a href="#透视表过滤">透视表过滤</a></li>
 </ul></li>
-<li><a href="#异常值-离群点">异常值（离群点）</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -393,205 +395,153 @@ if (!doNotTrack) {
     <div class="post-content">
       
 
-<h1 id="缺失值">缺失值：</h1>
+<ul>
+<li>使用Pamdas中的pivot_table()函数的前提也是挑战，就是需要理解数据，包括数据的实际意义，以及数据之间的关系，在这基础之上，还必须清楚地知道自己想通过数据透视表解决什么问题。</li>
+</ul>
 
-<h2 id="判断是否存在缺失值-df-isnull-返回bool值-缺失值都为true">判断是否存在缺失值：<code>df.isnull()</code>    返回bool值，缺失值都为True</h2>
+<h2 id="基本形式">基本形式</h2>
 
 <ul>
-<li><code>df.['列名'].isnull()</code>：判断某列是否有缺失值,也可以结合<code>loc[]</code>进行选择</li>
-<li><code>df[df['列名'].isnull()] [:10]</code> ：判断并列出前十行</li>
+<li>透视表的基本设定形式是：<code>pd.pivot_table(df,index = [],values = [])</code><br /></li>
+<li>默认是取均值</li>
+<li>对显示进行设置：<code>pd.set_option</code>(&lsquo;max  -columns&rsquo;,100)</li>
+</ul>
 
-<li><p>让我们用之前的例子：</p>
+<p>​                                      <code>pd.set</code>_option(&lsquo;max_rows&rsquo;,500)                   500行 100列内 不折叠</p>
+
+<ul>
+<li><p>有多个索引，多数的pivot_table()参数可通过列表获取多个值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">In [1]:df = pd.read_csv(&#39;新豆瓣电影评分.csv&#39;,header = 0,index_col = 0)
+In [2]:df
+Out[2]:</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p><img src="C:UsersdellDesktop小六.jpg" alt="小六" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">,</span><span class="s1">&#39;年代&#39;</span><span class="p">],</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">])</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="C:UsersdellDesktop小五.jpg" alt="小五" /></p>
+
+<h3 id="其余参数使用">其余参数使用：</h3>
+
+<ul>
+<li><p>除了默认的均值外，还可指定参数<strong><code>aggfunc</code> =</strong> ，统计不同的统计值 :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">,</span><span class="s1">&#39;年代&#39;</span><span class="p">],</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span><span class="n">aggfunc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p><img src="C:UsersdellDesktop小七.jpg" alt="小七" /></p>
+
+<p>eg: 通过将‘投票人数’和‘评分’列进行对应分组，对‘产地’实现数据聚合和总结：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">],</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;投票人数&#39;</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span>
+                      <span class="n">aggfunc</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">])</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="C:UsersdellDesktop小八.jpg" alt="小八" /></p>
+
+<ul>
+<li><p>空值（NaN），可以通过 <strong><code>fill_value =</code></strong> 对其赋值：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mf">1.</span><span class="p">,</span>
-  <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;20180101&#39;</span><span class="p">),</span>
-  <span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)),</span><span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">),</span>
-  <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span><span class="n">dtype</span> <span class="o">=</span> <span class="nb">int</span><span class="p">),</span>
-  <span class="s1">&#39;E&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">([</span><span class="s1">&#39;test&#39;</span><span class="p">,</span><span class="s1">&#39;train&#39;</span><span class="p">,</span><span class="s1">&#39;test&#39;</span><span class="p">,</span><span class="s1">&#39;train&#39;</span><span class="p">]),</span>
-  <span class="s1">&#39;F&#39;</span><span class="p">:</span><span class="s1">&#39;acb&#39;</span><span class="p">})</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;D&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;等级&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;优&#39;</span><span class="p">,</span><span class="s1">&#39;良&#39;</span><span class="p">,</span><span class="s1">&#39;中&#39;</span><span class="p">,</span><span class="s1">&#39;差&#39;</span><span class="p">]</span>   <span class="c1">#插入一列类型不同的吧</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span><span class="n">df</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span><span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span><span class="n">df1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;投票人数&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span><span class="n">df1</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
 
-<p>​       下面是我截的图：df</p>
-
-<p><img src="https://graph.baidu.com/resource/111541ec1c05b3986984701571038530.jpg"  /></p>
+<p><img src="C:UsersdellDesktop是.jpg" alt="是" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;D&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span><span class="mi">0</span>     <span class="bp">True</span>
-       <span class="mi">1</span>     <span class="bp">True</span>
-       <span class="mi">2</span>     <span class="bp">True</span>
-       <span class="mi">3</span>    <span class="bp">False</span>
-       <span class="n">Name</span><span class="p">:</span> <span class="n">D</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">bool</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()][</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span>      <span class="n">A</span>    <span class="n">B</span>         <span class="n">C</span>    <span class="n">D</span>   <span class="n">E</span>      <span class="n">F</span>  <span class="err">等级</span>
-       <span class="mi">1</span>	<span class="mf">1.0</span>	<span class="mi">2018</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">01</span>	<span class="mf">1.0</span>	<span class="n">NaN</span>	<span class="n">train</span>	<span class="n">acb</span>	<span class="err">良</span>
-       <span class="mi">2</span>	<span class="mf">1.0</span>	<span class="mi">2018</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">01</span>	<span class="mf">1.0</span>	<span class="n">NaN</span>	<span class="n">test</span>	<span class="n">acb</span>	<span class="err">中</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">],</span><span class="n">aggfunc</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">],</span><span class="n">fill_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span></code></pre></td></tr></table>
 </div>
 </div>
-<h2 id="处理缺失值-填充-和-删除">处理缺失值：填充 和 删除</h2>
+<p><img src="C:UsersdellDesktop不.jpg" alt="不" /></p>
 
 <ul>
-<li><p>处理方法一：填充  fillna()</p>
-
-<ol>
-<li><code>df.fillna(一个标量)</code></li>
-<li><code>df.fillna(Series, index必须是原DataFrame的需要填充缺失值的columns)</code></li>
-<li><code>df.fillna(dict，keys必须是columns)</code></li>
-
-<li><p><code>df.fillna(DataFrame，columns必须是原columns)</code></p>
+<li><p>通过加入<strong><code>margins = True</code></strong> ,可以在下方显示一些综合数据all:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mf">2.1</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;20180102&#39;</span><span class="p">),</span>
-              <span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="mf">1.1</span><span class="p">,</span>
-              <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span>
-              <span class="s1">&#39;E&#39;</span><span class="p">:</span><span class="s1">&#39;test&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;F&#39;</span><span class="p">:</span><span class="s1">&#39;aas&#39;</span><span class="p">,</span>
-           <span class="s1">&#39;等级&#39;</span><span class="p">:</span><span class="s1">&#39;菜鸟&#39;</span><span class="p">})</span>  
-<span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span><span class="n">s</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>     <span class="c1">#给df插入一行</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span><span class="n">df</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">],</span><span class="n">aggfunc</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">],</span>
+                  <span class="n">fill_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">margins</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p><img src="C:UsersdellDesktop号.jpg" alt="号" /></p>
+
+<ul>
+<li><p>如果要对不同的列执行不同的函数，可以向aggfunc =传入一个字典:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">],</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;投票人数&#39;</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span>
+                  <span class="n">aggfunc</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;投票人数&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">},</span><span class="n">fill_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span></code></pre></td></tr></table>
 </div>
 </div></li>
-</ol></li>
 </ul>
 
-<p>下面是我的截图：df</p>
+<p><img src="C:UsersdellDesktop去.jpg" alt="去" /></p>
 
-<p><img src="https://graph.baidu.com/resource/111dfd7355e7b88810a9c01571040098.jpg" alt="" /></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span><span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>       <span class="c1">#不会更改df1</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span><span class="mi">0</span>    <span class="mf">0.0</span>
-        <span class="mi">1</span>    <span class="mf">0.0</span>
-        <span class="mi">2</span>    <span class="mf">0.0</span>
-        <span class="mi">3</span>    <span class="mf">3.0</span>
-        <span class="mi">4</span>    <span class="mf">9.0</span>
-        <span class="n">Name</span><span class="p">:</span> <span class="n">D</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>     <span class="c1">#这样就更改了原数据表,或者用参数inplace = True</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span><span class="n">df1</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">13</span><span class="p">]:</span></code></pre></td></tr></table>
-</div>
-</div>
-<p><img src="https://graph.baidu.com/resource/111aaa01bdf5bbc7ed2e301571040846.jpg" alt="" /></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]))</span>     <span class="c1">#用该列的平均值填充缺失值</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">14</span><span class="p">]:</span><span class="mi">0</span>    <span class="mf">6.0</span>
-        <span class="mi">1</span>    <span class="mf">6.0</span>
-        <span class="mi">2</span>    <span class="mf">6.0</span>
-        <span class="mi">3</span>    <span class="mf">3.0</span>
-        <span class="mi">4</span>    <span class="mf">9.0</span>
-        <span class="n">Name</span><span class="p">:</span> <span class="n">D</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span></code></pre></td></tr></table>
-</div>
-</div>
-<ul>
-<li><p>处理方法二：删除  dropna()</p>
-
-<ol>
-<li><code>df.dropna()</code> :默认情况下，有缺失值得整行都删除，返回视图</li>
-<li>相关参数有：how = &lsquo;all&rsquo;     当行或者列的元素全为空值的时候，这样的行或列才会被删除</li>
-</ol></li>
-</ul>
-
-<p>​                              inplace = True     覆盖原表数据</p>
-
-<p>​                              axis = 0  |    1       选择行或列</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">15</span><span class="p">]:</span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>    <span class="c1">#按行，只要有一个空值就会把整行都删掉</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">15</span><span class="p">]:</span></code></pre></td></tr></table>
-</div>
-</div>
-<p><img src="https://graph.baidu.com/resource/111402ba2546e7dcc82db01571041605.jpg" alt="" /></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">16</span><span class="p">]:</span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="n">inplace</span> <span class="o">=</span> <span class="bp">True</span> <span class="p">)</span>      <span class="c1">#按列了</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]:</span><span class="n">df</span></code></pre></td></tr></table>
-</div>
-</div>
-<p><img src="https://graph.baidu.com/resource/1116dfaa6ea2f451aeb6101571041758.jpg" alt="" /></p>
-
-<h1 id="异常值-离群点">异常值（离群点）</h1>
+<h3 id="透视表过滤">透视表过滤</h3>
 
 <ul>
-<li><p>通过条件选择查找出异常值有哪些</p></li>
-
-<li><p>对于占比极少数的异常值，可以直接删掉就好</p></li>
-
-<li><p>也可以利用条件选择，只保留正常值</p>
+<li><p>要知道的是，透视表本身也是DataFrame,因而裸铝操作都相同，只需要给透视表一个命名即可调用各种方法和查看属性。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
@@ -600,13 +550,15 @@ if (!doNotTrack) {
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">18</span><span class="p">]:</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">A</span> <span class="o">&gt;</span> <span class="mf">1.0</span><span class="p">]</span>   <span class="c1">#试图找出异常值 </span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">18</span><span class="p">]:</span>     <span class="n">A</span>    <span class="n">B</span>          <span class="n">C</span>   <span class="n">D</span>   <span class="n">E</span>       <span class="n">F</span>  <span class="err">等级</span>
-   <span class="mi">4</span>	<span class="mf">2.1</span>	<span class="mi">2018</span><span class="o">-</span><span class="mo">01</span><span class="o">-</span><span class="mo">02</span>	<span class="mf">1.1</span>	<span class="mf">9.0</span>	<span class="n">test</span>	<span class="n">aas</span>	<span class="err">菜鸟</span>
-<span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">]:</span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">A</span> <span class="o">&lt;</span> <span class="mf">2.0</span><span class="p">]</span>   <span class="c1">#只保留正常区间的数据</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span><span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;产地&#39;</span><span class="p">],</span><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;投票人数&#39;</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">],</span>
+                  <span class="n">aggfunc</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;投票人数&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">,</span><span class="s1">&#39;评分&#39;</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">},</span><span class="n">fill_value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span><span class="n">table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;投票人数&#39;</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
+
+<p><img src="C:UsersdellDesktop与.jpg" alt="与" /></p>
 
     </div>
 
@@ -620,7 +572,7 @@ if (!doNotTrack) {
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2019-08-19
+      2019-08-22
       
     </span>
   </p>
@@ -637,14 +589,14 @@ if (!doNotTrack) {
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://zhangyan110.github.io/tags/pandas-1/">Pandas -1</a>
+          <a href="https://zhangyan110.github.io/tags/pandas-2/">Pandas -2</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/pandas%E8%A1%A5%E5%85%85%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%E5%92%8C%E6%8E%92%E5%BA%8F/">
+          <a class="prev" href="/post/%E6%95%B0%E6%8D%AE%E9%87%8D%E5%A1%91%E5%92%8C%E8%BD%B4%E5%90%91%E6%97%8B%E8%BD%AC/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -654,12 +606,12 @@ if (!doNotTrack) {
 </svg>
 
             </i>
-            <span class="prev-text nav-default">pandas补充’数据格式转换和排序‘</span>
+            <span class="prev-text nav-default">数据重塑和轴向旋转</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/">
-            <span class="next-text nav-default">pandas数据操作</span>
+          <a class="next" href="/post/%E5%9F%BA%E6%9C%AC%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/">
+            <span class="next-text nav-default">基本统计分析</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
@@ -697,7 +649,7 @@ if (!doNotTrack) {
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
-      this.page.url = "https://zhangyan110.github.io/post/pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/";
+      this.page.url = "https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86/";
     };
     function load_disqus() {
       

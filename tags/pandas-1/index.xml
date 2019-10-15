@@ -17,7 +17,7 @@
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyan110.github.io/post/pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/</guid>
-      <description>缺失值：</description>
+      <description>缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.[&#39;列名&#39;].isnull()：判断某列是否有缺失</description>
     </item>
     
     <item>
