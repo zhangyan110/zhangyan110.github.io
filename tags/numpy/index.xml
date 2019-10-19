@@ -13,28 +13,28 @@
     
     <item>
       <title>数组操作</title>
-      <link>https://zhangyan110.github.io/post/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</link>
+      <link>https://zhangyan110.github.io/post/a-5%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://zhangyan110.github.io/post/a-5%E6%95%B0%E7%BB%84%E6%93%8D%E4%BD%9C/</guid>
       <description>数组内部元素类型 数组无论一维还是多维的，都支持内部元素的很多类型，具体有： int整数、float浮点数、bool布尔型、uint、compl</description>
     </item>
     
     <item>
       <title>数组的索引和切片</title>
-      <link>https://zhangyan110.github.io/post/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <link>https://zhangyan110.github.io/post/a-7%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
       <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <guid>https://zhangyan110.github.io/post/a-7%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
       <description>多维数组及其属性 array可以直接生成多维数组（矩阵）： 当向np.array() 的括号中传入单个列表时生成一维矩阵，传入一个以列表为元素的列</description>
     </item>
     
     <item>
       <title>认识Numpy库和一维数组</title>
-      <link>https://zhangyan110.github.io/post/numpy%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <link>https://zhangyan110.github.io/post/a-6numpy%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
       <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/numpy%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <guid>https://zhangyan110.github.io/post/a-6numpy%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
       <description>了解Numpy Numpy是python的一种来源的数值计算扩展。一个重要的特征是它的*数组计算*，是数据分析不可或缺的重要工具包。这个工具可</description>
     </item>
     

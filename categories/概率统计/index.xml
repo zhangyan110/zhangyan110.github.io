@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>概率统计 on 张大仙儿</title>
+    <link>https://zhangyan110.github.io/categories/%E6%A6%82%E7%8E%87%E7%BB%9F%E8%AE%A1/</link>
+    <description>Recent content in 概率统计 on 张大仙儿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://zhangyan110.github.io/categories/%E6%A6%82%E7%8E%87%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>概率基本概念和相关计算</title>
+      <link>https://zhangyan110.github.io/post/c-1%E6%A6%82%E7%8E%87%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/c-1%E6%A6%82%E7%8E%87%E5%9F%BA%E7%A1%80/</guid>
+      <description>事件及其概率 实验和事件： 一次实验：对一个或者多个对象进行*一次*观察或测量的过程。 事件：实验的结果。 随机实验的特点： 实验可以在相同条件下重复</description>
+    </item>
+    
+  </channel>
+</rss>

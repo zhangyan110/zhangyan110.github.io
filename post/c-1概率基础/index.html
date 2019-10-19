@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>概率基本概念和相关计算 - 张大仙儿</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="张大仙儿" />
+  <meta name="description" content="事件及其概率 实验和事件： 一次实验：对一个或者多个对象进行*一次*观察或测量的过程。 事件：实验的结果。 随机实验的特点： 实验可以在相同条件下重复" />
+
+  <meta name="keywords" content="Hugo, theme, jane" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+<link rel="canonical" href="https://zhangyan110.github.io/post/c-1%E6%A6%82%E7%8E%87%E5%9F%BA%E7%A1%80/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="概率基本概念和相关计算" />
+<meta property="og:description" content="事件及其概率 实验和事件： 一次实验：对一个或者多个对象进行*一次*观察或测量的过程。 事件：实验的结果。 随机实验的特点： 实验可以在相同条件下重复" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhangyan110.github.io/post/c-1%E6%A6%82%E7%8E%87%E5%9F%BA%E7%A1%80/" />
+
+<meta itemprop="name" content="概率基本概念和相关计算">
+<meta itemprop="description" content="事件及其概率 实验和事件： 一次实验：对一个或者多个对象进行*一次*观察或测量的过程。 事件：实验的结果。 随机实验的特点： 实验可以在相同条件下重复">
+
+
+
+<meta itemprop="wordCount" content="2369">
+
+
+
+<meta itemprop="keywords" content="概率," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="概率基本概念和相关计算"/>
+<meta name="twitter:description" content="事件及其概率 实验和事件： 一次实验：对一个或者多个对象进行*一次*观察或测量的过程。 事件：实验的结果。 随机实验的特点： 实验可以在相同条件下重复"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'true', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">张大仙儿</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/">首页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/post/">归档</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/categories/">分类</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/about/">About</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://github.com/zhangyan110/" rel="noopener" target="_blank">
+              github
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      张大仙儿
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/">首页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/post/">归档</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://zhangyan110.github.io/about/">About</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://github.com/zhangyan110/" rel="noopener" target="_blank">
+              github
+              
+              <i class="iconfont">
+                <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M623.36 272.96 473.216 423.04C467.2 429.056 467.072 438.656 472.896 444.416c0 0-6.72-6.656 1.6 1.6C496.064 467.648 528.64 500.224 528.64 500.224 534.464 506.048 544 505.856 550.016 499.904l150.08-150.144 67.328 66.432c9.024 8.96 27.456 4.544 30.4-8.96 19.968-92.608 46.656-227.52 46.656-227.52 6.848-34.496-16.192-56.704-49.92-49.92 0 0-134.656 26.816-227.328 46.784C560.32 178.048 556.352 182.272 554.752 187.136c-3.2 6.208-3.008 14.208 3.776 20.992L623.36 272.96z"></path>
+  <path d="M841.152 457.152c-30.528 0-54.784 24.512-54.784 54.656l0 274.752L237.696 786.56 237.696 237.696l206.016 0c6.656 0 10.752 0 13.248 0C487.68 237.696 512 213.184 512 182.848 512 152.32 487.36 128 456.96 128L183.04 128C153.216 128 128 152.576 128 182.848c0 3.136 0.256 6.272 0.768 9.28C128.256 195.136 128 198.272 128 201.408l0 639.488c0 0.064 0 0.192 0 0.256 0 0.128 0 0.192 0 0.32 0 30.528 24.512 54.784 54.784 54.784l646.976 0c6.592 0 9.728 0 11.712 0 28.736 0 52.928-22.976 54.464-51.968C896 843.264 896 842.304 896 841.344l0-20.352L896 561.408 896 512.128C896 481.792 871.424 457.152 841.152 457.152z"></path>
+</svg>
+
+              </i>
+            </a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">概率基本概念和相关计算</h1>
+      
+      <div class="post-meta">
+        <time datetime="0001-01-01" class="post-time">
+          0001-01-01
+        </time>
+        <div class="post-category">
+            <a href="https://zhangyan110.github.io/categories/%E6%A6%82%E7%8E%87%E7%BB%9F%E8%AE%A1/"> 概率统计 </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#事件及其概率">事件及其概率</a>
+<ul>
+<li><a href="#实验和事件">实验和事件：</a></li>
+<li><a href="#概率">概率：</a></li>
+</ul></li>
+<li><a href="#概率的性质和运算法则">概率的性质和运算法则</a>
+<ul>
+<li><a href="#1-概率的性质">1、概率的性质：</a></li>
+<li><a href="#2-互斥事件及其概率">2、互斥事件及其概率</a></li>
+<li><a href="#3-事件的补及其概率">3、事件的补及其概率</a></li>
+<li><a href="#4-广义概率加法公式">4、广义概率加法公式</a></li>
+<li><a href="#5-条件概率与事件的独立性">5、条件概率与事件的独立性</a></li>
+</ul></li>
+<li><a href="#全概率公式与贝叶斯公式">全概率公式与贝叶斯公式</a>
+<ul>
+<li><a href="#1-全概率公式">1、全概率公式：</a></li>
+<li><a href="#2-贝叶斯公式-逆概率公式">2、贝叶斯公式（逆概率公式）</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h2 id="事件及其概率">事件及其概率</h2>
+
+<h3 id="实验和事件">实验和事件：</h3>
+
+<ul>
+<li><strong>一次实验</strong>：对一个或者多个对象进行*一次*观察或测量的过程。</li>
+<li><strong>事件</strong>：实验的结果。</li>
+<li><strong>随机实验</strong>的特点：</li>
+</ul>
+
+<ol>
+<li>实验可以在相同条件下重复进行 ；</li>
+<li>每次实验的结果可能不止一个，但<u>实验的所有可能结果</u><u>（<strong>基本事件</strong>）</u>在实验之前是被确切知道的；</li>
+<li>在实验结束之前，不能确定该次实验的确切结果。<br /></li>
+</ol>
+
+<p>​    具有上面三个特点的实验，称为随机实验，相应的随机实验的结果称为<strong>随机事件</strong>。</p>
+
+<p>​    举例：抛出一枚均匀的硬币，观察其出现正面或者反面的情况；</p>
+
+<p>​                   掷一枚骰子，观察其出现的点数；</p>
+
+<p>​                   从一批次品率为p的产品中随机抽出一个，观察其是正品还是次品。</p>
+
+<ul>
+<li><strong>样本空间和样本点</strong>：在一项实验中，可以罗列出实验的所有可能结果（基本事件），把一项实验的基本事件的全体称为样本空间，而样本空间中每一个特定的实验结果称为样本点，是作为样本空间的组成元素。</li>
+</ul>
+
+<h3 id="概率">概率：</h3>
+
+<ul>
+<li>概率是对于随机事件发生可能性大小的一种数值度量，数值上介于0到1之间，事件A发生的概率用p(A)表示。</li>
+<li>从16世纪以来，共产生三种不同的概率定义：</li>
+</ul>
+
+<ol>
+<li><p>古典概率：p = 事件A中包含的基本事件 / 样本空间中基本事件总数   = m / n</p></li>
+
+<li><p>统计概率：p(A) = p 约等于 m/n</p></li>
+</ol>
+
+<p>是指历史上同类事件发生的稳定的频率。</p>
+
+<p>具体解释就是：若在同样条件下重复进行n次的实验中，事件A发生了m次，当实验次数n很大时，事件A发生的频率m/n就会稳定地在某一常数p上下波动，而且这种波动的幅度一定会伴随着实验次数的增加而不断减小，则定义常数p为事件A发生的概率。</p>
+
+<ol>
+<li>主观概率：区别于古典概率和统计概率都作为客观概率的性质，对于未来的某些事件，既不能通过客观的理论分析，也不能根据大量重复试验的概率来做估计，这时候支持决策的概率推断就是主观概率。</li>
+</ol>
+
+<h2 id="概率的性质和运算法则">概率的性质和运算法则</h2>
+
+<h3 id="1-概率的性质">1、概率的性质：</h3>
+
+<ol>
+<li>非负性：对于任意事件 P(A) &gt;= 0</li>
+<li>规范性： 0&lt;= p(A) &lt;= 1</li>
+<li>必然事件的概率等于1，不可能事件的概率等于0</li>
+<li>互斥事件的概率，若两个事件A和B互斥，则事件A发生或者事件B发生的概率，就等于这两个事件各自发生的概率之和。</li>
+</ol>
+
+<h3 id="2-互斥事件及其概率">2、互斥事件及其概率</h3>
+
+<ul>
+<li>在一项实验中，若两个事件中有一个发生，另一个就不可能发生，称这两个事件为互斥事件。从集合的角度理解就是，两个事件没有公共样本点。</li>
+<li>两个事件互斥的情景也可以推广到多个事件：若事件A1、A2、&hellip;&hellip;..、An中，<u>任意两个</u> 事件互斥，则称这n 个事件为互斥事件。</li>
+<li>互斥事件的概率加法规则：若两个事件A和B互斥，则事件A发生或者事件B发生的概率，就等于这两个事件各自发生的概率之和。即：p（AuB） = p(A) + p(B)</li>
+</ul>
+
+<h3 id="3-事件的补及其概率">3、事件的补及其概率</h3>
+
+<ul>
+<li>在一项实验中，事件A为一个基本事件，则整个样本空间中除去事件A的剩下的就为A的补事件A-，也叫逆事件或对立事件。所以，A和A的对立事件不可能同时发生但必有一个发生。</li>
+<li>可见，互逆事件首先是互斥事件,反之未必。</li>
+<li>优定义知：p(A) + p(A-) = 1</li>
+<li>在实际应用中，如果直接考察A事件比较复杂，可以通过其补事件来求A的概率问题。</li>
+<li>明确一下互斥事件和对立事件的区别：</li>
+</ul>
+
+<p>​         <img src="https://graph.baidu.com/resource/1118b3431aca728b5c6d701571463414.jpg" alt="" /></p>
+
+<p>​        图1中，事件A和事件B就是互斥事件，交集为空；图2中，事件A和事件B就是对立事件，两个事件构成整个          样本空间。</p>
+
+<h3 id="4-广义概率加法公式">4、广义概率加法公式</h3>
+
+<ul>
+<li>对于任意两个事件A和B，广义加法公式可以表示为：p(AuB) = p(A) + p(B) -p(AB)。</li>
+</ul>
+
+<h3 id="5-条件概率与事件的独立性">5、条件概率与事件的独立性</h3>
+
+<ul>
+<li><strong>条件概率</strong>：已知事件B发生的条件下，求事件A发生的概率，称为已知B时A的条件概率，或称为给定B下A的概                          率，记为p（A|B），文氏图如下：</li>
+</ul>
+
+<p>​      <img src="https://upload-images.jianshu.io/upload_images/2127249-4af1203ef9f2f691.jpg?imageMogr2/auto-orient/strip|imageView2/2/format/webp" alt="" /></p>
+
+<p>​    那么条件概率也就是求：如果B发生了，那这时候B的发生所会引起的A和B同时发生的概率是多少</p>
+
+<p>​    p(A|B) = p(AB) / p(B)</p>
+
+<ul>
+<li><strong>乘法公式</strong>：由条件概率的公式可以得p(AB) = p(B)*p(A|B)</li>
+</ul>
+
+<p>​                                                                                =P(A)*P(B|A)</p>
+
+<p>​       这就是概率的乘法公式，可用于加法公式的求解中。</p>
+
+<ul>
+<li><strong>独立事件</strong>：区别于条件概率中的事件A和事件B的相关性，独立事件A和B就是说，事件A和事件B的发生互不影响，也即满足：p(A|B) = P(A)      ;   P(B|A) = P(B)</li>
+</ul>
+
+<p>​       这时候，对于两个相互独立的事件，乘法公式就变成：p(AB) = p(A)*P(B)</p>
+
+<p>​      当然，两个独立事件的乘法公式可以推广到多个独立事件：若事件A1,A2,&hellip;&hellip;&hellip;An相互独立</p>
+
+<p>​      p(A1A2&hellip;..An) = p(A1)P(A2)&hellip;&hellip;P(An)</p>
+
+<h2 id="全概率公式与贝叶斯公式">全概率公式与贝叶斯公式</h2>
+
+<h3 id="1-全概率公式">1、全概率公式：</h3>
+
+<ul>
+<li>条件概率和乘法公式对于概率理论及其应用的真正意义在于，它们能将一个相对复杂的事件分解成多个相对简单的便于计算概率的事件，而全概率公式正是这一思路的一般实现</li>
+<li>全概率公式的应用场景：</li>
+</ul>
+
+<p>​      <img src="https://graph.baidu.com/resource/1114a3d3a98bcf9da54d501571459945.jpg" alt="" /></p>
+
+<ul>
+<li>借助网上的一个文氏图的解释：</li>
+</ul>
+
+<p>​     <img src="https://upload-images.jianshu.io/upload_images/2127249-1c63915d1cb91d48.jpg?imageMogr2/auto-orient/strip|imageView2/2/format/webp" alt="" /></p>
+
+<p>​    图中的总的样本空间S是由事件A和其对立事件A&rsquo;共同构成的，即：p(A) + P(A&rsquo;) = 1</p>
+
+<p>​    这个时候如果有个事件B，我们可以通过事件A来分两部分对事件B 进行解释：</p>
+
+<p>​     <img src="https://upload-images.jianshu.io/upload_images/2127249-4b27b8fe4bf7373a.jpg?imageMogr2/auto-orient/strip|imageView2/2/format/webp" alt="" /></p>
+
+<p>​    如图，事件B就可以解释为和事件A重叠的一部分，以及和事件A‘ 重叠的另一部分，这样一来，事件B的概率就        可以表示为：p(B) = p(BA) + P(BA&rsquo;)</p>
+
+<p>​   由上面讲过的乘法公式 ，为了避免混乱我们用事件X和事件Y表示：p(XY) = p(X).P(Y|X)  =  P(Y).P(X|Y)</p>
+
+<p>​   就有：p(B) = P(A).P(B|A) + P(A&rsquo;).P(B|A&rsquo;)</p>
+
+<ul>
+<li>当样本空间S是由更多的互不相容的事件A1,A2,A3 &hellip;..An组成的时候，全概率公式就有了最完全的形式：</li>
+</ul>
+
+<p>​     <img src="https://graph.baidu.com/resource/1116f6070bea40901e8f901571459394.jpg" alt="" /></p>
+
+<p>​   概率论中，把满足上述条件的一组事件A1,A2,&hellip;&hellip;..An 称为完备事件组，由于它们的并恰好等于整个样本空间， 相互之间又无交叉，所以实际上它们是对样本空间的一个分割。</p>
+
+<h3 id="2-贝叶斯公式-逆概率公式">2、贝叶斯公式（逆概率公式）</h3>
+
+<ul>
+<li>概率论证明，由全概率公式可以推导得出另一个重要的公式叫逆概率公式。</li>
+</ul>
+
+<p>​       <img src="https://graph.baidu.com/resource/111e845739ff500014cdd01571462555.jpg" alt="" />   这里呢，是将B1,B2,&hellip;&hellip;Bn 作为完备事件组的，理解就可以。</p>
+
+<ul>
+<li>应用场景：当我们通过全概率公式知道了一个事件会发生的概率，由于该事件的发生会存在不同的原因， 这时候，就可以通过逆概率公式，来计算各个原因导致该事件发生的概率，从而清楚哪些原因占比最重，哪些原因影响甚微。</li>
+</ul>
+
+<p>&mdash;&mdash;&mdash;下一节 随机变量及其概率分布</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">张大仙儿</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      0001-01-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://zhangyan110.github.io/tags/%E6%A6%82%E7%8E%87/">概率</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/c-2%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  <div class="disqus-comment">
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+    Show Disqus Comments
+  </div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_config = function () {
+      this.page.url = "https://zhangyan110.github.io/post/c-1%E6%A6%82%E7%8E%87%E5%9F%BA%E7%A1%80/";
+    };
+    function load_disqus() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'true';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      $('#load_disqus').remove();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+  </div>
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:your@email.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://localhost:1313" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+  
+    <a href="http://localhost:1313" rel="me noopener" class="iconfont"
+      title="zhihu"  target="_blank"
+      >
+      <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M351.791182 562.469462l192.945407 0c0-45.367257-21.3871-71.939449-21.3871-71.939449L355.897709 490.530013c3.977591-82.182744 7.541767-187.659007 8.816806-226.835262l159.282726 0c0 0-0.86367-67.402109-18.578124-67.402109s-279.979646 0-279.979646 0 16.850783-88.141456 39.318494-127.053698c0 0-83.60514-4.510734-112.121614 106.962104S81.344656 355.077018 76.80834 367.390461c-4.536316 12.313443 24.62791 5.832845 36.941354 0 12.313443-5.832845 68.050885-25.924439 84.252893-103.69571l86.570681 0c1.165546 49.28652 4.596691 200.335724 3.515057 226.835262L109.86113 490.530013c-25.275663 18.147312-33.701566 71.939449-33.701566 71.939449L279.868105 562.469462c-8.497535 56.255235-23.417339 128.763642-44.275389 167.210279-33.05279 60.921511-50.55235 116.65793-169.802314 212.576513 0 0-19.442818 14.257725 40.829917 9.073656 60.273758-5.185093 117.305683-20.739347 156.840094-99.807147 20.553105-41.107233 41.805128-93.250824 58.386782-146.138358l-0.055259 0.185218 167.855986 193.263655c0 0 22.035876-51.847855 5.832845-108.880803L371.045711 650.610918l-42.1244 31.157627-0.045025 0.151449c11.69946-41.020252 20.11206-81.5749 22.726607-116.858498C351.665315 564.212152 351.72876 563.345412 351.791182 562.469462z"></path>
+  <path d="M584.918753 182.033893l0 668.840094 70.318532 0 28.807093 80.512708 121.875768-80.512708 153.600307 0L959.520453 182.033893 584.918753 182.033893zM887.150192 778.934538l-79.837326 0-99.578949 65.782216-23.537066-65.782216-24.855084 0L659.341766 256.673847l227.807403 0L887.149169 778.934538z"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://zhangyan110.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2017 -
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        张大仙儿
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

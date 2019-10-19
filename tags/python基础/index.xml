@@ -13,28 +13,28 @@
     
     <item>
       <title>python函数</title>
-      <link>https://zhangyan110.github.io/post/%E5%87%BD%E6%95%B0/</link>
+      <link>https://zhangyan110.github.io/post/a-4%E5%87%BD%E6%95%B0/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://zhangyan110.github.io/post/a-4%E5%87%BD%E6%95%B0/</guid>
       <description>内置函数 python 有许多内置函数，像max()、min()、abs()、sum()、还包括数据类型转换的函数：str()、inf()、float()</description>
     </item>
     
     <item>
       <title>数据结构</title>
-      <link>https://zhangyan110.github.io/post/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <link>https://zhangyan110.github.io/post/a-3python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
       <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <guid>https://zhangyan110.github.io/post/a-3python%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
       <description>列表（list）：[ ] 列表中的各个元素可以是各种不同数据类型，也可以是列表本身，或者是字典、集合、元组等。 1 In [1]:a = [12,&amp;#39;stri</description>
     </item>
     
     <item>
       <title>数据类型和运算符</title>
-      <link>https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://zhangyan110.github.io/post/a-2%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://zhangyan110.github.io/post/a-2%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>一、数据类型 1.字符串（str) 字符串用’引号‘来定义，一行可以用单引号，多行字符串就要用三个单引号 或者三个双引号； 1 2 3 In [1]:ass = &amp;#39;this is a short string.&amp;#39; In</description>
     </item>
     

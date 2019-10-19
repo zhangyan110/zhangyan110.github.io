@@ -13,28 +13,28 @@
     
     <item>
       <title>pandas缺失值和异常值</title>
-      <link>https://zhangyan110.github.io/post/pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/</link>
+      <link>https://zhangyan110.github.io/post/a-10pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/</guid>
+      <guid>https://zhangyan110.github.io/post/a-10pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/</guid>
       <description>缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.[&#39;列名&#39;].isnull()：判断某列是否有缺失</description>
     </item>
     
     <item>
       <title>pandas数据操作</title>
-      <link>https://zhangyan110.github.io/post/pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</link>
+      <link>https://zhangyan110.github.io/post/a-9pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://zhangyan110.github.io/post/a-9pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/</guid>
       <description>Pandas读取数据和数据操作 文本格式数据的读写 将表格型数据读取为DataFrame对象是pandas的重要特性，要实现该功能，基本函数形式</description>
     </item>
     
     <item>
       <title>pandas数据结构</title>
-      <link>https://zhangyan110.github.io/post/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <link>https://zhangyan110.github.io/post/a-8pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zhangyan110.github.io/post/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <guid>https://zhangyan110.github.io/post/a-8pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
       <description>pandas基本数据结构 pandas内置大量标准库和数据结构，能够有效的处理大型数据集。 使用Pandas需要导入：import pandas as pd 1、Se</description>
     </item>
     
