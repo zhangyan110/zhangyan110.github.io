@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excel数据分析 on 张大仙儿</title>
+    <link>https://zhangyan110.github.io/categories/excel%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</link>
+    <description>Recent content in Excel数据分析 on 张大仙儿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangyan110.github.io/categories/excel%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Excel数据导入</title>
+      <link>https://zhangyan110.github.io/post/b-2excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/b-2excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</guid>
+      <description>一、从网页导入动态数据 具体步骤： 打开一张空的Excel表 到浏览器上找到需要进行导入的的数据所在网站 复制网站网址 回到Excel表，选择 “数据”</description>
+    </item>
+    
+    <item>
+      <title>Excel入门须知</title>
+      <link>https://zhangyan110.github.io/post/b-1excel%E5%89%8D%E5%AF%BC%E6%80%A7%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/b-1excel%E5%89%8D%E5%AF%BC%E6%80%A7%E7%9F%A5%E8%AF%86/</guid>
+      <description>一、Power BI系列组件介绍 Power BI是Excel的一个新的插件，主要针对商业数据的百万级数据获取、分析和展示，组件主要构成有：Power Qu</description>
+    </item>
+    
+  </channel>
+</rss>
