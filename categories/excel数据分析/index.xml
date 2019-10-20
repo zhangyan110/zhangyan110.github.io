@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>单元格格式</title>
+      <link>https://zhangyan110.github.io/post/b-3excel%E5%8D%95%E5%85%83%E6%A0%BC/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/b-3excel%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
+      <description>一、缩进： 选择需要缩进的区域 ctrl + 1 调出设置单元格格式对话框 选择 “对齐” 设置缩进长度为2 二、部分区域保护： ctrl + 1在 “保护” 下可以，查看原本的数</description>
+    </item>
+    
+    <item>
       <title>Excel入门须知</title>
       <link>https://zhangyan110.github.io/post/b-1excel%E5%89%8D%E5%AF%BC%E6%80%A7%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
