@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyan110.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>互联网996都在吸引哪些人的关注</title>
+      <link>https://zhangyan110.github.io/post/d-1%E4%BA%92%E8%81%94%E7%BD%91996%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/d-1%E4%BA%92%E8%81%94%E7%BD%91996%E9%A1%B9%E7%9B%AE/</guid>
+      <description>你要了解的‘996.ICU’: 目录 一、分析背景与目的 二、分析思路和数据来源 三、正文 四、总结 一、分析背景与目的 分析背景 ​ 2019年3月27日，</description>
+    </item>
     
     <item>
       <title>随机变量</title>
@@ -180,15 +189,6 @@
       
       <guid>https://zhangyan110.github.io/post/b-2excel%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5/</guid>
       <description>一、从网页导入动态数据 具体步骤： 打开一张空的Excel表 到浏览器上找到需要进行导入的的数据所在网站 复制网站网址 回到Excel表，选择 “数据”</description>
-    </item>
-    
-    <item>
-      <title>1-3单元格格式</title>
-      <link>https://zhangyan110.github.io/post/b-3excel%E5%8D%95%E5%85%83%E6%A0%BC/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhangyan110.github.io/post/b-3excel%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
-      <description>缩进： 选择需要缩进的区域 ctrl + 1 调出设置单元格格式对话框 选择 “对齐” 设置缩进长度为2 部分区域保护： ctrl + 1在 “保护” 下可以，查看原本的数据表都是</description>
     </item>
     
   </channel>
