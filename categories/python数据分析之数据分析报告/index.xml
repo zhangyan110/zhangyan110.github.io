@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python数据分析之数据分析报告 on 张大仙儿</title>
+    <link>https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/</link>
+    <description>Recent content in Python数据分析之数据分析报告 on 张大仙儿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8B%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据分析报告的撰写</title>
+      <link>https://zhangyan110.github.io/post/a-21%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E7%9A%84%E6%92%B0%E5%86%99/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/a-21%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A%E7%9A%84%E6%92%B0%E5%86%99/</guid>
+      <description>数据分析报告可以分为两类： 论文性：结构为 引言、文献综述、方法介绍、实证分析、总结 研究型：可以以ppt形式表达，注重三点：逻辑、表达、外观 结构</description>
+    </item>
+    
+  </channel>
+</rss>

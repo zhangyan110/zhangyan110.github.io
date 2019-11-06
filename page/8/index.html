@@ -352,15 +352,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/a-6numpy%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/">认识Numpy库和一维数组</a>
+      <a class="post-link" href="/post/a-10pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/">pandas缺失值和异常值</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2019-08-09" class="post-time">
-        2019-08-09
+      <time datetime="2019-08-19" class="post-time">
+        2019-08-19
       </time>
       <div class="post-category">
-          <a href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bnumpy/"> Python数据分析之Numpy </a>
+          <a href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bpandas/"> Python数据分析之Pandas </a>
           
         </div>
       
@@ -372,10 +372,10 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      了解Numpy Numpy是python的一种来源的数值计算扩展。一个重要的特征是它的*数组计算*，是数据分析不可或缺的重要工具包。这个工具可
+      缺失值： 判断是否存在缺失值：df.isnull() 返回bool值，缺失值都为True df.['列名'].isnull()：判断某列是否有缺失
     </div>
     <div class="read-more">
-      <a href="/post/a-6numpy%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/" class="read-more-link">Read more</a>
+      <a href="/post/a-10pandas%E7%BC%BA%E5%A4%B1%E5%80%BC%E5%92%8C%E5%BC%82%E5%B8%B8%E5%80%BC/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -386,15 +386,15 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/post/a-4%E5%87%BD%E6%95%B0/">python函数</a>
+      <a class="post-link" href="/post/a-9pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/">pandas数据操作</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2019-08-06" class="post-time">
-        2019-08-06
+      <time datetime="2019-08-17" class="post-time">
+        2019-08-17
       </time>
       <div class="post-category">
-          <a href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"> Python数据分析 </a>
+          <a href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bpandas/"> Python数据分析之Pandas </a>
           
         </div>
       
@@ -406,10 +406,10 @@ if (!doNotTrack) {
   <div class="post-content">
     
     <div class="post-summary">
-      内置函数 python 有许多内置函数，像max()、min()、abs()、sum()、还包括数据类型转换的函数：str()、inf()、float()
+      Pandas读取数据和数据操作 文本格式数据的读写 将表格型数据读取为DataFrame对象是pandas的重要特性，要实现该功能，基本函数形式
     </div>
     <div class="read-more">
-      <a href="/post/a-4%E5%87%BD%E6%95%B0/" class="read-more-link">Read more</a>
+      <a href="/post/a-9pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -438,65 +438,475 @@ if (!doNotTrack) {
 
   
   
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/page/7/">7</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/8/">8</a>
-      </li>
-      
-      <li >
-        <a href="/page/9/">9</a>
-      </li>
-      
-      <li >
-        <a href="/page/10/">10</a>
-      </li>
-      
-      <li >
-        <a href="/page/11/">11</a>
-      </li>
-      
-      <li >
-        <a href="/page/12/">12</a>
-      </li>
-      
-      <li >
-        <a href="/page/13/">13</a>
-      </li>
-      
-    </ul>
-  </nav>
 
-  
+    <nav class="pagination">
+      <ul>
+
+      
+      
+      <li><a href="/">««</a></li>
+      
+
+      
+      
+      <li><a href="/page/7/">«</a></li>
+      
+
+      
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/2/">
+              2
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/3/">
+              3
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/4/">
+              4
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/5/">
+              5
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/6/">
+              6
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/7/">
+              7
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="active">
+            <a href="/page/8/">
+              8
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/9/">
+              9
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/10/">
+              10
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/11/">
+              11
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/12/">
+              12
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/13/">
+              13
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+              
+            
+
+          
+
+        
+        
+
+        
+        
+          <li class="">
+            <a href="/page/14/">
+              14
+            </a>
+          </li>
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+        
+
+        
+        
+
+          
+          
+          
+
+            
+
+          
+
+        
+        
+
+        
+        
+
+      
+
+      
+      
+      <li><a href="/page/9/">»</a></li>
+      
+
+      
+      
+      <li><a href="/page/16/">»»</a></li>
+      
+
+      </ul>
+    </nav>
   
 
 

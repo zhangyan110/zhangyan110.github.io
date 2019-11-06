@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python数据分析之Matplotlib on 张大仙儿</title>
+    <link>https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bmatplotlib/</link>
+    <description>Recent content in Python数据分析之Matplotlib on 张大仙儿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zhangyan110.github.io/categories/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B9%8Bmatplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>以豆瓣电影为例绘图-2</title>
+      <link>https://zhangyan110.github.io/post/a-20%E4%BB%A5%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E4%B8%BA%E4%BE%8B%E7%BB%98%E5%9B%BE-2/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/a-20%E4%BB%A5%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E4%B8%BA%E4%BE%8B%E7%BB%98%E5%9B%BE-2/</guid>
+      <description>准备工作： 1 2 3 4 5 6 7 8 9 10 11 12 import numpy as np import pandas as pd import matplotlib.pyplot as plt import warnings warnings.filterwarnings(&amp;#39;ignore&amp;#39;) plt.rcParams[&amp;#39;font.sans-serif&amp;#39;] = [&amp;#39;SimHei&amp;#39;] plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False df = pd.read_csv(r&amp;#34;新豆瓣电影评分.csv&amp;</description>
+    </item>
+    
+    <item>
+      <title>以豆瓣电影为例绘图-1</title>
+      <link>https://zhangyan110.github.io/post/a-19%E4%BB%A5%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E4%B8%BA%E4%BE%8B%E7%BB%98%E5%9B%BE-1/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/a-19%E4%BB%A5%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E4%B8%BA%E4%BE%8B%E7%BB%98%E5%9B%BE-1/</guid>
+      <description>一些准备工作 忽略警告： 1 2 import warnings warnings.filterwarnings(&amp;#39;ignore&amp;#39;) x,y轴可以正常显示中文： 1 plt.rcParams[&amp;#39;font.sans-serif&amp;#39;] = [&amp;#39;SimHei&amp;#39;] 可以正常显示负号： 1 plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False 绘制每个国家的电影数量柱状图：bar() 1 2 df =</description>
+    </item>
+    
+    <item>
+      <title>matplotlib的基本使用</title>
+      <link>https://zhangyan110.github.io/post/a-17-matplotlib%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/a-17-matplotlib%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
+      <description>了解matplotlib绘图包： ​ Matplotlib是Python的一个2D绘图包，matplotlib.pyplot包含一系列类似MAT</description>
+    </item>
+    
+    <item>
+      <title>plt.plot()</title>
+      <link>https://zhangyan110.github.io/post/a-18-%E7%BA%BF%E5%BD%A2%E5%9B%BE/</link>
+      <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/a-18-%E7%BA%BF%E5%BD%A2%E5%9B%BE/</guid>
+      <description>绘线形图 1 2 3 4 5 6 import numpy as np import pandas as pd import matplotlib.pyplot as plt plt.plot([1,2,3,4]) #默认以index=0，1，2，3为X轴，1，2，3，4位Y轴 plt.xlabel(&amp;#39;X&amp;#39;) plt.ylabel(&amp;#39;Y&amp;#39;) 基本用法： 1、指定X和Y：p</description>
+    </item>
+    
+  </channel>
+</rss>

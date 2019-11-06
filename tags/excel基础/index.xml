@@ -6,10 +6,19 @@
     <description>Recent content in Excel基础 on 张大仙儿</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhangyan110.github.io/tags/excel%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1-6常用函数</title>
+      <link>https://zhangyan110.github.io/post/b-6%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhangyan110.github.io/post/b-6%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</guid>
+      <description>关联匹配类 Vlookup()：按列查找，用于查找首列满足条件的元素 语法：= vlookup(要查找的值，查找区域，区域中包含返回值的相对列号，</description>
+    </item>
     
     <item>
       <title>1-4查找与替换</title>

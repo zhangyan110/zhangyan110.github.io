@@ -17,7 +17,7 @@
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhangyan110.github.io/post/a-16%E5%90%88%E5%B9%B6%E6%95%B0%E6%8D%AE%E9%9B%86/</guid>
-      <description></description>
+      <description>append(): 纵向 对于一个数据集合和集合元素来说，append()就是将元素添加到集合中 1 2 3 4 a = [1,2] a.append(3) a [1,2,3] 对于两个数据集合（数据文件）来说，appen</description>
     </item>
     
     <item>
